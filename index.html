@@ -15,8 +15,22 @@
             <span class="seconds">00</span>
         </div>
         <div class="start">
-            <button class="start-btn">START</button>
+            <div class="start-shadow">
+                <button class="start-btn">START</button>
+            </div>
         </div>
     </div>
+
+    <script>
+
+        let start2 = document.querySelector('.start')
+        let start1 = document.querySelector('.start-btn')
+        start1.addEventListener('click', startBtn)
+
+        function startBtn() {
+            start2.setAttribute('class', 'start-click')
+        }
+        
+    </script>
 </body>
 </html>
